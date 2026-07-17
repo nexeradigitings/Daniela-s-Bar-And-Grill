@@ -3,323 +3,240 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniela's Bar & Grill — Nashville Dive Bar, Cold Beer & Live Music</title>
-<meta name="description" content="Daniela's Bar & Grill, 12 E Thompson Ln, Nashville TN. Neighborhood dive bar, live music, happy hour 4–7pm.">
+<title>Daniela's Bar &amp; Grill — Nashville Dive Bar &amp; Live Music</title>
+<meta name="description" content="Daniela's Bar & Grill — a Nashville neighborhood dive bar with cold beer, Tex-Mex nights, live music and happy hour 4–7. 12 E Thompson Ln, Nashville, TN.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Caveat:wght@500;700&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= LOADER ================= -->
-<div id="loader">
-  <div class="loader-sign">
-    <span class="loader-word l1">DANIELA'S</span>
-    <span class="loader-word l2">BAR</span>
+<!-- ===================== PRELOADER ===================== -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-sign">
+    <svg class="sign-tube" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+      <text x="50%" y="62%" text-anchor="middle" class="tube-text tube-daniela">Daniela's</text>
+      <text x="50%" y="98%" text-anchor="middle" class="tube-text tube-bar">B A R</text>
+    </svg>
   </div>
-  <div class="loader-tube"></div>
-  <p class="loader-tag">flipping the switch…</p>
+  <div class="preloader-strip"></div>
+  <p class="preloader-label">warming up the neon…</p>
 </div>
 
-<!-- ================= INTRO / WELCOME OVERLAY ================= -->
-<div id="welcome">
-  <div class="welcome-inner">
-    <h1 class="welcome-title">DANIELA'S</h1>
-    <p class="welcome-sub">BAR &amp; GRILL</p>
-    <button id="enterBtn" class="enter-btn">STEP INSIDE</button>
-    <p class="welcome-hint">12 E Thompson Ln · Nashville, TN</p>
-  </div>
-  <div class="welcome-glow"></div>
-</div>
-
-<!-- ================= NAV ================= -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="#home" class="brand">Daniela's<span>BAR &amp; GRILL</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#music">Live Music</a></li>
+<!-- ===================== NAV ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-strip strip-top" aria-hidden="true"></div>
+  <nav class="nav container">
+    <a href="#top" class="brand">
+      <span class="brand-script">Daniela's</span>
+      <span class="brand-sub">BAR &amp; GRILL</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">The Bar</a></li>
+      <li><a href="#happyhour">Happy Hour</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#visit">Visit</a></li>
+      <li><a href="tel:+16159150672" class="nav-call">Call Now</a></li>
     </ul>
-    <a href="tel:+16159150672" class="nav-cta">Call Now</a>
-    <button id="navToggle" class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-
-<!-- ================= HERO ================= -->
-<header id="home" class="hero">
-  <div class="hero-sky">
-    <div class="stars"></div>
-    <div class="clouds"></div>
-  </div>
-  <div class="hero-building">
-    <div class="roofline"></div>
-    <div class="tube tube-red"></div>
-    <div class="tube tube-green"></div>
-  </div>
-
-  <div class="hero-content">
-    <p class="eyebrow">— Est. Neighborhood Dive · Nashville, TN —</p>
-    <h1 class="hero-sign">
-      <span class="flicker f1">DANIELA'S</span>
-      <span class="flicker f2">BAR</span>
-    </h1>
-    <p class="hero-line">Cold beer. Loud jukebox. Live bands. No pretense.</p>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <strong>3.7<span>★</span></strong>
-        <small>109 Google Reviews</small>
-      </div>
-      <div class="stat">
-        <strong>4–7pm</strong>
-        <small>Happy Hour Daily</small>
-      </div>
-      <div class="stat">
-        <strong>$20–30</strong>
-        <small>Per Person</small>
-      </div>
-    </div>
-
-    <div class="hero-buttons">
-      <a href="tel:+16159150672" class="btn btn-primary">Call (615) 915-0672</a>
-      <a href="#visit" class="btn btn-outline">Get Directions</a>
-    </div>
-  </div>
-
-  <div class="scroll-cue"><span></span>Scroll</div>
+  </nav>
 </header>
 
-<!-- ================= MARQUEE STRIP ================= -->
-<div class="marquee-strip">
-  <div class="marquee-track">
-    <span>DIVE MUSIC</span><span>•</span><span>HAPPY HOUR 4–7PM</span><span>•</span>
-    <span>COLD BEER</span><span>•</span><span>LIVE BANDS</span><span>•</span>
-    <span>DIVE MUSIC</span><span>•</span><span>HAPPY HOUR 4–7PM</span><span>•</span>
-    <span>COLD BEER</span><span>•</span><span>LIVE BANDS</span><span>•</span>
-  </div>
-</div>
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-sky"></div>
+  <div class="hero-glow"></div>
+  <div class="wires" aria-hidden="true"></div>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about reveal">
-  <div class="about-grid">
-    <div class="about-copy">
-      <p class="section-tag">01 — The Spot</p>
-      <h2>A real neighborhood bar,<br>not a stage set.</h2>
-      <p>Tucked into Thompson Lane, Daniela's is the kind of place where the bartender knows your order before you sit down. Neon in the windows, graffiti-painted specials on the wall, and a jukebox that leans hard into Mexican music alongside classic dive-bar staples.</p>
-      <p>It's unfussy, it's loud when it needs to be, and it's been a fixture for the folks who live nearby. Come for happy hour, stay for whoever's playing that night.</p>
+  <div class="hero-content container">
+    <p class="eyebrow-neon">— Est. Nashville Neighborhood Dive —</p>
+    <h1 class="hero-logo">
+      <span class="glow-pink">Daniela's</span>
+      <span class="glow-ice">BAR</span>
+    </h1>
+    <p class="hero-tagline">Cold beer, loud jukebox, live bands &amp; the best jukebox mix of Mexican &amp; American music on this side of Thompson Lane.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=12+E+Thompson+Ln,+Nashville,+TN+37211" target="_blank" rel="noopener">Get Directions</a>
+      <a class="btn btn-outline" href="tel:+16159150672">Call (615) 915-0672</a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="rating-chip">
+        <span class="stars" style="--rating:3.7"><span></span></span>
+        <span class="rating-text">3.7 · 109 reviews</span>
+      </div>
+      <div class="hours-chip">
+        <span class="dot dot-live"></span> Opens today at 11 AM
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-strip" aria-hidden="true"></div>
+  <div class="scroll-cue"><span></span>Scroll</div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <p class="eyebrow">The Bar</p>
+      <h2 class="marker-heading">A neighborhood joint, not a show</h2>
+      <p>Daniela's has been the low-key corner of Berry Hill / Thompson Lane where regulars know the bartender and the bartender knows your order. Wood-paneled walls, a jukebox that swings from norteño to classic rock, and a patio for when Nashville actually cooperates with the weather.</p>
+      <p>No pretense, no cover charge attitude — just cold drinks, a pool table, and Brenda pouring like you're the only one in the room.</p>
       <div class="about-tags">
-        <span>🍺 Dine-in</span>
-        <span>🥡 Takeout</span>
-        <span>🚚 Delivery</span>
-        <span>🎸 Live Bands</span>
+        <span class="tag">Dive Bar</span>
+        <span class="tag">Live Music</span>
+        <span class="tag">Tex-Mex Grill</span>
+        <span class="tag">Dine-in · Takeout · Delivery</span>
       </div>
     </div>
-    <div class="about-visual">
-      <div class="frame-card card-1">
-        <div class="neon-border"></div>
-        <p class="card-quote">"Fantastic place to go if you like to listen to a wide variety of Mexican music."</p>
-      </div>
-      <div class="frame-card card-2">
-        <div class="neon-border blue"></div>
-        <p class="card-quote">"The service is great."</p>
+    <div class="about-visual reveal">
+      <div class="frame-3d">
+        <div class="frame-face frame-front">
+          <span class="frame-neon">EST.</span>
+          <span class="frame-big">DIVE</span>
+          <span class="frame-neon">BAR</span>
+        </div>
+        <div class="frame-face frame-side"></div>
+        <div class="frame-face frame-top"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= MENU ================= -->
-<section id="menu" class="menu reveal">
-  <p class="section-tag light">02 — On The Menu</p>
-  <h2 class="menu-title">Bar Food &amp; Cold Drinks</h2>
-  <p class="menu-sub">Classic grill plates and an ice-cold bar, built for happy hour.</p>
-
-  <div class="menu-grid">
-    <div class="menu-item">
-      <div class="menu-item-top">
-        <h3>Grilled Bar Burger</h3>
-        <span class="price">$11</span>
-      </div>
-      <p>Charred patty, melted cheese, grilled onions, side of fries.</p>
+<!-- ===================== HAPPY HOUR / LIVE MUSIC (graffiti wall) ===================== -->
+<section class="wall" id="happyhour">
+  <div class="wall-strip strip-a" aria-hidden="true"></div>
+  <div class="container wall-grid">
+    <div class="wall-card reveal">
+      <span class="spray spray-yellow">HAPPY HOUR</span>
+      <p class="wall-time">4 — 7 PM · DAILY</p>
+      <p class="wall-desc">Cold domestic pints, house pours, and Tex-Mex sides at prices that still feel like a dive bar.</p>
     </div>
-    <div class="menu-item">
-      <div class="menu-item-top">
-        <h3>Street-Style Tacos</h3>
-        <span class="price">$3 ea</span>
-      </div>
-      <p>Choice of meat, onion, cilantro, house salsa roja.</p>
+    <div class="wall-card reveal">
+      <span class="spray spray-green">LIVE MUSIC</span>
+      <p class="wall-time">FRIDAYS &amp; SATURDAYS</p>
+      <p class="wall-desc">Local bands, honky-tonk regulars, and a jukebox that never sleeps in between sets.</p>
     </div>
-    <div class="menu-item">
-      <div class="menu-item-top">
-        <h3>Loaded Nachos</h3>
-        <span class="price">$10</span>
-      </div>
-      <p>Queso, jalapeños, pico, sour cream, pickled onion.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-top">
-        <h3>Wings Basket</h3>
-        <span class="price">$12</span>
-      </div>
-      <p>Tossed hot, mild, or dry-rub. Celery &amp; ranch on the side.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-top">
-        <h3>Domestic Draft</h3>
-        <span class="price">$3</span>
-      </div>
-      <p>Rotating taps, ice cold, happy hour pricing 4–7pm.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-top">
-        <h3>House Margarita</h3>
-        <span class="price">$7</span>
-      </div>
-      <p>Tequila, lime, orange liqueur, salted rim.</p>
+    <div class="wall-card reveal">
+      <span class="spray spray-pink">DIVE MUSIC</span>
+      <p class="wall-time">TAQUERIA EL CAMPESINO</p>
+      <p class="wall-desc">Grab tacos from the taqueria on-site while you wait for the band to tune up.</p>
     </div>
   </div>
-  <p class="menu-note">Menu items are representative — call ahead for the full current lineup.</p>
+  <div class="wall-strip strip-b" aria-hidden="true"></div>
 </section>
 
-<!-- ================= LIVE MUSIC ================= -->
-<section id="music" class="music reveal">
-  <div class="music-inner">
-    <div class="music-copy">
-      <p class="section-tag">03 — After Dark</p>
-      <h2 class="spray-text">DIVE&nbsp;MUSIC</h2>
-      <p>When the sun goes down, the amps come out. Daniela's hosts live bands and DJ nights right on the floor — no cover-band pretending, just a bar that turns into the best party on Thompson Lane.</p>
-      <ul class="music-list">
-        <li><span>Happy Hour</span><strong>4:00 PM – 7:00 PM Daily</strong></li>
-        <li><span>Live Music</span><strong>Weekend Nights</strong></li>
-        <li><span>Vibe</span><strong>Loud, Neon, Unfiltered</strong></li>
+<!-- ===================== REVIEWS ===================== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <p class="eyebrow">What the Regulars Say</p>
+    <h2 class="marker-heading light">109 reviews, one neighborhood feel</h2>
+
+    <div class="review-grid">
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-body">"This place has a wonderful neighborhood feel. Brenda treats you like you're the only customer in the room — pull up a stool and stay a while."</p>
+        <p class="review-author">— Clint Shields, 5 reviews</p>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-body">Regulars keep coming back for the wide mix of music on the jukebox and the easygoing, no-frills service.</p>
+        <p class="review-author">— Local Guide review</p>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-body">A real dive bar in the best sense: friendly bartenders, honest pours, and a crowd that treats you like family.</p>
+        <p class="review-author">— Nashville regular</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VISIT / INFO ===================== -->
+<section class="visit" id="visit">
+  <div class="container visit-grid">
+    <div class="visit-info reveal">
+      <p class="eyebrow">Visit Us</p>
+      <h2 class="marker-heading">Find the neon sign</h2>
+
+      <ul class="info-list">
+        <li>
+          <span class="info-label">Address</span>
+          <span class="info-value">12 E Thompson Ln, Nashville, TN 37211</span>
+        </li>
+        <li>
+          <span class="info-label">Phone</span>
+          <a class="info-value info-link" href="tel:+16159150672">+1 (615) 915-0672</a>
+        </li>
+        <li>
+          <span class="info-label">Hours Today</span>
+          <span class="info-value">Opens 11 AM</span>
+        </li>
+        <li>
+          <span class="info-label">Service</span>
+          <span class="info-value">Dine-in · Takeout · Delivery</span>
+        </li>
+        <li>
+          <span class="info-label">Price</span>
+          <span class="info-value">$20–30 per person</span>
+        </li>
       </ul>
+
+      <div class="visit-actions">
+        <a class="btn btn-solid" href="tel:+16159150672">Call for Info</a>
+        <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=12+E+Thompson+Ln,+Nashville,+TN+37211" target="_blank" rel="noopener">Get Directions</a>
+      </div>
     </div>
-    <div class="music-visual">
-      <div class="eq"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-    </div>
-  </div>
-</section>
 
-<!-- ================= REVIEWS ================= -->
-<section id="reviews" class="reviews reveal">
-  <p class="section-tag light">04 — What People Say</p>
-  <h2 class="menu-title">From The Regulars</h2>
-
-  <div class="review-cards">
-    <article class="review-card">
-      <div class="review-head">
-        <div class="avatar">CS</div>
-        <div>
-          <h4>Clint Shields</h4>
-          <span class="stars-row">★★★★★</span>
-        </div>
-      </div>
-      <p>"This place has a wonderful neighborhood feel to it. If you live in this area, the atmosphere is pleasant. Brenda who works there will treat you like you're the only customer. So have a drink — I might meet you there too."</p>
-    </article>
-
-    <article class="review-card">
-      <div class="review-head">
-        <div class="avatar">EM</div>
-        <div>
-          <h4>Earl McCrory</h4>
-          <span class="stars-row">★★★★☆</span>
-        </div>
-      </div>
-      <p>"Great little dive with cold drinks and a friendly bartender — good tips, good tunes, good time."</p>
-    </article>
-
-    <article class="review-card">
-      <div class="review-head">
-        <div class="avatar">RW</div>
-        <div>
-          <h4>Local Guide</h4>
-          <span class="stars-row">★★★★☆</span>
-        </div>
-      </div>
-      <p>"A real neighborhood staple with a wide variety of music and a laid-back crowd. Service is great and the vibe is exactly what you want from a dive bar."</p>
-    </article>
-  </div>
-
-  <div class="rating-banner">
-    <div class="rating-num">3.7<span>★</span></div>
-    <div class="rating-text">
-      <strong>109 Google Reviews</strong>
-      <p>Bar &amp; Grill · $20–30 per person</p>
+    <div class="visit-map reveal">
+      <iframe
+        title="Map to Daniela's Bar & Grill"
+        src="https://www.google.com/maps?q=12+E+Thompson+Ln,+Nashville,+TN+37211&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </div>
 </section>
 
-<!-- ================= VISIT / CONTACT ================= -->
-<section id="visit" class="visit reveal">
-  <div class="visit-grid">
-    <div class="visit-info">
-      <p class="section-tag">05 — Find Us</p>
-      <h2>Come see us on<br>Thompson Lane.</h2>
-
-      <div class="info-row">
-        <span class="info-icon">📍</span>
-        <div>
-          <strong>Address</strong>
-          <p>12 E Thompson Ln, Nashville, TN 37211, United States</p>
-        </div>
-      </div>
-      <div class="info-row">
-        <span class="info-icon">📞</span>
-        <div>
-          <strong>Phone</strong>
-          <p><a href="tel:+16159150672">+1 (615) 915-0672</a></p>
-        </div>
-      </div>
-      <div class="info-row">
-        <span class="info-icon">🕑</span>
-        <div>
-          <strong>Hours</strong>
-          <p>Opens 11 AM daily · Happy Hour 4–7 PM</p>
-        </div>
-      </div>
-      <div class="info-row">
-        <span class="info-icon">🍽️</span>
-        <div>
-          <strong>Service</strong>
-          <p>Dine-in · Takeout · Delivery</p>
-        </div>
-      </div>
-
-      <div class="visit-buttons">
-        <a href="tel:+16159150672" class="btn btn-primary">Call For Reservations</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=12+E+Thompson+Ln+Nashville+TN+37211" target="_blank" rel="noopener" class="btn btn-outline">Open in Maps</a>
-      </div>
-    </div>
-
-    <div class="visit-map">
-      <div class="map-card">
-        <div class="map-neon">DANIELA'S</div>
-        <p>12 E Thompson Ln<br>Nashville, TN 37211</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=12+E+Thompson+Ln+Nashville+TN+37211" target="_blank" rel="noopener" class="map-link">View on Google Maps →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
+<!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
-  <div class="footer-inner">
+  <div class="footer-strip" aria-hidden="true"></div>
+  <div class="container footer-grid">
     <div>
-      <p class="footer-brand">DANIELA'S <span>BAR &amp; GRILL</span></p>
-      <p>12 E Thompson Ln, Nashville, TN 37211</p>
+      <span class="brand-script small">Daniela's</span>
+      <span class="brand-sub">BAR &amp; GRILL</span>
+      <p class="footer-tag">Nashville's low-key neighborhood dive since day one.</p>
     </div>
-    <div class="footer-links">
-      <a href="tel:+16159150672">(615) 915-0672</a>
-      <a href="#home">Back to top ↑</a>
+    <div class="footer-col">
+      <h3>Find Us</h3>
+      <p>12 E Thompson Ln<br>Nashville, TN 37211</p>
+      <p><a href="tel:+16159150672">+1 615-915-0672</a></p>
+    </div>
+    <div class="footer-col">
+      <h3>Hours</h3>
+      <p>Open Daily · 11 AM</p>
+      <p>Happy Hour 4–7 PM</p>
+      <p>Live Music Fri &amp; Sat</p>
+    </div>
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <p><a href="#about">The Bar</a></p>
+      <p><a href="#happyhour">Happy Hour</a></p>
+      <p><a href="#reviews">Reviews</a></p>
     </div>
   </div>
-  <p class="footer-bottom">© 2026 Daniela's Bar &amp; Grill. Unofficial concept site. All neon burns bright.</p>
+  <p class="footer-fine">© 2026 Daniela's Bar &amp; Grill · 3.7★ · 109 reviews on Google</p>
 </footer>
 
-<a href="tel:+16159150672" class="float-call" aria-label="Call Daniela's Bar and Grill">📞</a>
+<button id="scrollTop" aria-label="Scroll to top">↑</button>
 
 <script src="script.js"></script>
 </body>
